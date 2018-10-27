@@ -1,0 +1,36 @@
+#main-fig{
+    float: left;
+}
+
+main-page {
+   float: left;
+} 
+
+.container {
+}
+
+#section-left {
+    overflow: hidden;
+    float: left;
+    width: 1000px;
+}
+
+#section-right {
+    float:right;
+}
+
+button {
+    color: ghostwhite;
+    background-color: green;
+    margin-left: 100px;
+    padding:10px;
+}
+
+footer{
+    text-align: center;
+    color: white
+}
+
+.panel-footer{
+    background-color: gray
+}

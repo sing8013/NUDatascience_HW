@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Visualization Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--Navigation bar-->
+ <div class="container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html"><button>Latitude</button></a>
+        </div>
+        <br>
+        <p class="navbar-text navbar-right"><a href="data.html" class="navbar-link">Data</a></p>
+        <p class="navbar-text navbar-right"><a href="comparison.html" class="navbar-link">Comparison</a></p>
+        <!--add drop down-->
+        <ul class="navbar-text navbar-right">
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                    Plots<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="temp.html">Max Temperature</a></li>
+                    <li><a href="wind_speed.html">Wind Speed</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">cloudiness</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>    
+<!---->
+<div class="row">
+<section>
+    <div class="container">
+     <div class="row"><h1>Summary: Latitude vs. X</h1><hr></div>  
+      <img src="Instructions/Resources/assets/images/Fig1.png" alt="Latitude Vs. X" height="300" width="300" float="left">
+      <p>
+          As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg.Latitude).
+          More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemishpere.
+          This may be due to the tilt of the earth at the time of the year this data was gathered.
+      </p>
+    </div>  
+</section>
+
+<!--blank space-->
+<section>
+        <div class="container">
+            <div class="row"><h1>Visualizations</h1><hr></div>  
+              <div class="row">
+                <div class="col-md-2">
+                    <a href="temp.html"><img src="Instructions/Resources/assets/images/Fig1.png" alt="Max Temperature" height="200" width="200" float='left'></a>
+                </div>
+                <div class="col-md-2">
+                    <a href="humidity.html"><img src="Instructions/Resources/assets/images/Fig2.png" alt="Latitude Vs. cloudiness" height="200" width="200" float='left'></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                    <a href="cloudiness.html"><img src="Instructions/Resources/assets/images/Fig3.png" alt="Latitude Vs. Humidity" height="200" width="200" float='left'></a>
+                </div>
+                       
+                <div class="col-md-2">
+                    <a href="wind_speed.html"><img src="Instructions/Resources/assets/images/Fig4.png" alt="Latitude Vs. Wind Speed" height="200" width="200" float='left'></a>
+                </div> 
+              </div>
+        </div>
+</section>
+</div>
+
+<!--Add bottom panel-->
+<div class="panel-footer"><footer>Copyright Coding BootCamp 2018</footer></div>
+
+</body>
+</html>
